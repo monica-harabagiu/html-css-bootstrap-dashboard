@@ -1,3 +1,7 @@
+header {
+    height: 60px;
+}
+
 header nav .fa-bell {
     color: #FF8F00;
 }
