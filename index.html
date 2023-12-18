@@ -135,8 +135,97 @@
                 <div class="row gap-3 gap-md-0 align-items-md-start">
                     <div class="col-12 col-md-3 d-flex align-items-center gap-2 order-md-1">
                         <h5 class="fs-6 m-0">Nuovo Studente</h5>
-                        <button class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAdd"
+                            aria-controls="offcanvasAdd"><i class="fa-solid fa-plus"></i></button>
                     </div>
+
+                    <!-- OFFCANVAS -->
+                    <div class="offcanvas offcanvas-end w-100" data-bs-backdrop="static" tabindex="-1" id="offcanvasAdd"
+                        aria-labelledby="offcanvasAddLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasAddLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="formGroupExampleInput" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" aria-label="First name">
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="formGroupExampleInput" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="formGroupExampleInput" class="form-label">Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" placeholder="Username"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="inputPassword5" class="form-label">Password</label>
+                                        <input type="password" id="inputPassword5" class="form-control"
+                                            aria-describedby="passwordHelpBlock">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="formGroupExampleInput" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" aria-label="Address">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <label for="formGroupExampleInput" class="form-label">Città</label>
+                                        <input type="text" class="form-control" aria-label="City">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <label for="formGroupExampleInput" class="form-label">Stato</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli...</option>
+                                            <option value="Italy">Italia</option>
+                                            <option value="UK">UK</option>
+                                            <option value="France">France</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <label for="formGroupExampleInput" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" aria-label="City">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="formGroupExampleInput" class="form-label">Foto</label>
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="notARobot">
+                                    <label class="form-check-label" for="notARobot">
+                                        Seleziona per proseguire
+                                    </label>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <button class="btn btn-primary">Salva</button>
+                                        <button class="btn btn-warning">Svuota</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                     <div class="col-12 col-md-6">
                         <div class="d-flex align-items-center gap-2">
                             <h3>Boolean</h3>
