@@ -22,7 +22,7 @@
 
     <!-- SECTION HEADER START ------------------------------------------------->
 
-    <header>
+    <header style="height: 60px;">
 
         <nav class="navbar bg-body-tertiary navbar-expand-lg flex-nowrap">
             <div class="container-fluid">
@@ -79,7 +79,7 @@
     <!-- !SECTION HEADER EMD -->
 
 
-    <main style="height: calc(100vh - 60px);">
+    <main style="height: calc(100vh - 60px);" class="d-flex">
 
         <!-- SECTION SIDEBAR START ------------------------------------------------>
 
@@ -131,6 +131,61 @@
 
         <!-- SECTION MAIN START ------------------------------------------------>
 
+        <div class="w-100">
+
+            <!-- blue section -->
+            <div class="container-fluid bg-primary text-light p-3">
+                <div class="row gap-3 gap-md-0 align-items-md-start">
+                    <div class="col-12 col-md-3 d-flex align-items-center gap-2 order-md-1">
+                        <h5 class="fs-6 m-0">Nuovo Studente</h5>
+                        <button class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <h3>Boolean</h3>
+                            <span class="badge rounded-pill text-bg-dark bg-opacity-25">Piano blaze</span>
+                        </div>
+
+                        <!-- breadcrumbs -->
+                        <nav style="--bs-breadcrumb-divider: '&Gt;';" aria-label="breadcrumb" class="text-light">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#"
+                                        class="text-light text-decoration-none badge rounded-pill text-bg-dark bg-opacity-25">3
+                                        app</a>
+                                </li>
+                                <li class="breadcrumb-item text-light" aria-current="page">
+                                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 d-lg-none">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                    <span
+                                        class="badge rounded-pill text-bg-dark bg-opacity-25 d-none d-lg-inline-block">
+                                        Boolean mobile app
+                                    </span>
+                                    <span
+                                        class="badge rounded-pill text-bg-dark bg-opacity-25 d-none d-lg-inline-block">
+                                        Boolean web app
+                                    </span>
+                                    <span
+                                        class="badge rounded-pill text-bg-dark bg-opacity-25 d-none d-lg-inline-block">
+                                        Boolean blog app
+                                    </span>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h5 class="fs-6 m-0">Studenti online negli ultimi 30 minuti</h5>
+                        <span class="fs-4 fw-bold">125</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
 
     </main>
@@ -139,9 +194,9 @@
 
 
     <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

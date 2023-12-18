@@ -1,7 +1,10 @@
-header {
-    height: 60px;
-}
-
 header nav .fa-bell {
     color: #FF8F00;
+}
+
+#sidebar {
+    background-image: url(../img/sidebar-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
